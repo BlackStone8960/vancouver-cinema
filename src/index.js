@@ -46,7 +46,7 @@ const fetchData = async () => {
   store.dispatch(populateMovies(movies));
   store.dispatch(startSetReservation());
   renderApp();
-} // 例外処理後で書く
+} 
 
 fetchData();
 

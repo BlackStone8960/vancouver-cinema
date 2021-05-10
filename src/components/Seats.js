@@ -65,6 +65,11 @@ export const Seats = (props) => {
     <section className="main-container">
       <Header history={props.history}/>
       <div className="seat-container">
+        <div class="seat-description">
+          <div class="seat-dummy"></div><span>N/A</span>
+          <div class="seat-dummy active"></div><span>Selected</span>
+          <div class="seat-dummy reserved"></div><span>Occupied</span>
+        </div>
         <div className="seat-wrapper">
           {seats.map((seat, index) => (
             <div
