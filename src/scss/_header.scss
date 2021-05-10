@@ -1,0 +1,41 @@
+.header {
+  background: darken($darkblue, 5%);
+  line-height: 1.5em;
+  margin-bottom: 50px;
+
+  .header-flex {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+
+    .header-title {
+      text-align: left;
+      padding: 10px;
+      font-size: 24px;
+      font-family: 'Girassol', cursive;
+      letter-spacing: 1.5px;
+      font-style: italic;
+      
+    }
+
+    .search-form {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 35px;
+      
+      .search-text {
+        width: 300px;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .search-icon {
+        height: 100%;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 0 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.seat-container {
+  width: 600px;
+  margin: 50px auto;
+  background-color: lighten(grey, 20%);
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  color: black;
+
+  .seat-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .seat-dummy {
+      width: 23px;
+      height: 33px;
+      background: white;
+      border: 1px solid #000;
+      margin: 0 4px 4px;
+      box-sizing: border-box;
+    }
+    .active {
+      background: blue;
+    }
+    .reserved {
+      background: gray;
+    }
+    span {
+      margin-right: 10px;
+    }
+    span:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .seat-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 20px 0;
+
+    .seat {
+      width: 23px;
+      height: 33px;
+      background: white;
+      border: 1px solid #000;
+      margin: 0 4px 4px;
+      box-sizing: border-box;
+    }
+    .active {
+      background: blue;
+    }
+    .reserved {
+      background: gray;
+    }
+  }
+  .sum-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 22px;
+    #seats-num {
+      color: aqua;
+      font-weight: bold;
+    }
+    #total {
+      color: brown;
+      font-weight: bold;
+    }
+  }
+  .button-flex { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 40px auto 0;
+
+    .cancel { 
+      background: white;
+    }
+    .confirm {
+      background: $yellow;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: $darkblue;
+}
+
+.main-container {
+  background-color: $darkblue;
+  color: $white;
+  .main-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}

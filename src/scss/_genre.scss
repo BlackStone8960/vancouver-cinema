@@ -1,0 +1,12 @@
+.genre-box {
+  border: 1px solid $white;
+  padding: 0 4px;
+  margin: 2px;
+  border-radius: 6px;
+  display: inline-block;
+
+  span {
+    font-size: 14px;
+    white-space: nowrap;  
+  }
+}
